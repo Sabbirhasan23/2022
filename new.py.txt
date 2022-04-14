@@ -1,0 +1,15 @@
+import random
+
+dif guess(x):
+    random_num = random.randint(1, x)
+    duess = 0
+    while guess != random_num:
+	   guess = int(input(f'Guess a number between 1 and {x}: '))
+	   if guess < random_num:
+		  print('sorry, guess again, too low.')
+	   elif guess > random_num:
+		  print('sorry guess again, too high.')
+
+    print(f'yea, you got it! you have guessed the number {random_num} correct')
+
+guess(10)
